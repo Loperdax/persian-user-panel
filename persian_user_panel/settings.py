@@ -8,6 +8,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+
+# add this that django user your model as default user
+# این رو باید اضافه کنین تا مدلی ک ساختین رو جنگو به عنوان مدل یوزر خودش بشناسه
+AUTH_USER_MODEL = 'user_manager_app.MyUser'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

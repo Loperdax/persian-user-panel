@@ -1,0 +1,27 @@
+<html>
+
+    <head>
+        <title>login page</title>
+    </head>
+    
+    <body>
+        {{error_message}}
+        <br>
+        <form method="POST"> 
+        {% csrf_token %} 
+            <div class="form-group"> 
+                <p>Email address</p>
+                <input name="email" type="email"> 
+            </div> 
+            <br>
+            <div class="form-group"> 
+                <p>Password</p> 
+                <input name="password" type="password"> 
+            </div> 
+            <br>
+            <button type="submit">Submit</button> 
+        </form>
+
+    </body>
+
+</html>
